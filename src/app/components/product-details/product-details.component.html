@@ -1,0 +1,55 @@
+
+<div style="background-color: #decc99; overflow-x: hidden" class="rounded" >
+    <img src="https://www.cafe-amazon.com/BackEnd/TempBanner1/e4a8790137dd4dadac10e704e3d92700.png" class="text-center" class="rounded" width="1540px" alt="Responsive image" />
+    <form>
+        <div class="text-center" style="margin-top: -20%;" >
+            <h1>{{product.p_type}}</h1>
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+            
+            </script>
+        <div>
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="dede" class="rounded float-left" alt="products-image" width="auto" height="632px" style="padding-left: 35%;" src="{{product.p_img}}">
+                    <nav class="justify-content-center" style=" display: inline-block; margin: -10% -60% 0% 60%">           
+                      <a id="btnHot" class="pdicon-hot" href="javascript:__doPostBack('btnHot','')" style="display:inline-block;height:75px;width:75px;background-image: url('https://www.cafe-amazon.com/images/products_icon_hot.png'); "></a>  
+                        <a id="btnCold" class="pdicon-cool is-active" href="javascript:__doPostBack('btnCold','')" style="display:inline-block;height:75px;width:75px;padding-left: 20%; background-image: url('https://www.cafe-amazon.com/images/products_icon_cool.png');"></a>                         
+                        <a id="btnFrappe" class="rounded float-right" href="javascript:__doPostBack('btnFrappe','')" style="display:inline-block;height:75px;width:75px;padding-left: 20%; background-image: url('https://www.cafe-amazon.com/images/products_icon_smooty_hover.png'); "></a>                         
+                    </nav> 
+                </div>
+                <div class="col-sm-6">
+                    <div  style="text-align: left; padding: 30% 0% 0% 50%; ">
+                        <h3>{{product.p_name}}</h3>   </div>
+                        <hr style="border-top: 2px solid gray !important; border-right: 0%; margin-left: 50%; width: 50%;">
+                    
+                        <div  style=" padding: 0% 0% 0% 50%; margin:0% -5% 0% 0% ">
+                            <p>{{product.p_detail}}</p>
+                        </div>
+                        <div>
+                            <a class="justify-content-end" class="btn btn-success" role="button" style="margin: 5% 0% 0% 100%">
+                                <i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+                        </div>
+                
+                  
+                </div> 
+            </div>
+            
+        </div>
+    </form>
+
+</div >
