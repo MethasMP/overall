@@ -9,6 +9,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { IndexComponent } from './components/index/index.component';
 import { AdminComponent } from './components/admin/admin.component';
 import { ClientComponent } from './components/client/client.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ClientComponent } from './components/client/client.component';
     IndexComponent,
     AdminComponent,
     ClientComponent,
+    MenuComponent
     
 
   ],
